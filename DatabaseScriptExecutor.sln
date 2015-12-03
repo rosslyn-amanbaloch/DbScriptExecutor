@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseScriptExecutor", "DatabaseScriptExecutor\DatabaseScriptExecutor.csproj", "{804E9A52-20A4-4BBE-B7C7-47FD7127C5C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidCommon", "..\..\RAPid\RAPid\RapidCommon\RapidCommon.csproj", "{11F57FA6-BB80-4498-9550-A94BD8D51D67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseScriptExecutorTests", "DatabaseScriptExecutorTests\DatabaseScriptExecutorTests.csproj", "{28EECA1D-CBAE-4944-A14C-EA1236B1F771}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,22 +35,22 @@ Global
 		{804E9A52-20A4-4BBE-B7C7-47FD7127C5C6}.US Prod|Any CPU.Build.0 = Release|Any CPU
 		{804E9A52-20A4-4BBE-B7C7-47FD7127C5C6}.Us Uat|Any CPU.ActiveCfg = Release|Any CPU
 		{804E9A52-20A4-4BBE-B7C7-47FD7127C5C6}.Us Uat|Any CPU.Build.0 = Release|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.App Azure Global Prod|Any CPU.ActiveCfg = Azure Global Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.App Azure Global Prod|Any CPU.Build.0 = Azure Global Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.App Azure Global|Any CPU.ActiveCfg = App Azure Global|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.App Azure Global|Any CPU.Build.0 = App Azure Global|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Azure Dev|Any CPU.ActiveCfg = Azure Dev|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Azure Dev|Any CPU.Build.0 = Azure Dev|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.UK Prod|Any CPU.ActiveCfg = UK Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.UK Prod|Any CPU.Build.0 = UK Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.US Prod|Any CPU.ActiveCfg = US Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.US Prod|Any CPU.Build.0 = US Prod|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Us Uat|Any CPU.ActiveCfg = Us Uat|Any CPU
-		{11F57FA6-BB80-4498-9550-A94BD8D51D67}.Us Uat|Any CPU.Build.0 = Us Uat|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.App Azure Global Prod|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.App Azure Global Prod|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.App Azure Global|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.App Azure Global|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Azure Dev|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Azure Dev|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.UK Prod|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.UK Prod|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.US Prod|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.US Prod|Any CPU.Build.0 = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Us Uat|Any CPU.ActiveCfg = Release|Any CPU
+		{28EECA1D-CBAE-4944-A14C-EA1236B1F771}.Us Uat|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

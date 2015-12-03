@@ -47,3 +47,12 @@ C:\WorkingFolder\TestProjects\DatabaseScriptExecutor\DatabaseScriptExecutor\bin\
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\DatabaseScriptExecutor.exe.config
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.exe
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.pdb
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.csprojResolveAssemblyReference.cache
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.MainForm.resources
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.Properties.Resources.resources
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\obj\Debug\DatabaseScriptExecutor.csproj.GenerateResource.Cache
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\DatabaseScriptExecutor.exe
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\DatabaseScriptExecutor.pdb
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\Dapper.dll
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\Dapper.pdb
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutor\bin\Debug\Dapper.xml
