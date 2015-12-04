@@ -9,6 +9,6 @@ namespace DatabaseScriptExecutor
     public interface IFormService
     {
         Task<IEnumerable<string>> GetDbNamesAsync(string connectionString);
-        Task ExecuteSqlAsync(string connectionString, string sql);
+        Task ExecuteSqlAsync(string connectionString, string dbName, string sql);
     }
 }

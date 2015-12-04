@@ -9,5 +9,6 @@ namespace DatabaseScriptExecutor
     public interface IFormRepository
     {
         Task<IEnumerable<string>> GetDbNamesAsync(string connectionString);
+        Task ExecuteSqlAsync(string connectionString, string dbName, string sql);
     }
 }

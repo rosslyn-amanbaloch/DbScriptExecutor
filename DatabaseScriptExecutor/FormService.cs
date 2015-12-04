@@ -19,9 +19,9 @@ namespace DatabaseScriptExecutor
             return await _formRepository.GetDbNamesAsync(connectionString);
         }
 
-        public Task ExecuteSqlAsync(string connectionString, string sql)
+        public async Task ExecuteSqlAsync(string connectionString, string dbName, string sql)
         {
-            throw new NotImplementedException();
+            await _formRepository.ExecuteSqlAsync(connectionString, dbName, sql);
         }
     }
 }
