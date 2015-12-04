@@ -16,7 +16,9 @@ namespace DatabaseScriptExecutor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var repository = new FormRepository();
+            var service = new FormService(repository);
+            Application.Run(new MainForm(service));
         }
     }
 }

@@ -1,0 +1,5 @@
+bin
+/DatabaseScriptExecutor/obj
+/DatabaseScriptExecutorTests/bin
+/DatabaseScriptExecutorTests/obj
+/packages
