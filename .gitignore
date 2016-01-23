@@ -3,3 +3,4 @@ bin
 /DatabaseScriptExecutorTests/bin
 /DatabaseScriptExecutorTests/obj
 /packages
+obj

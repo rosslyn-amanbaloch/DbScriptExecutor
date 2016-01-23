@@ -20,3 +20,6 @@ C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\bin\Debug\xunit.ex
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\obj\Debug\DatabaseScriptExecutorTests.dll
 C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\obj\Debug\DatabaseScriptExecutorTests.pdb
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\bin\Debug\Dapper.dll
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\bin\Debug\Dapper.pdb
+C:\WorkingFolder\DbScriptExecutor\DatabaseScriptExecutorTests\bin\Debug\Dapper.xml
