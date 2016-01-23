@@ -1,5 +1,10 @@
-bin
-packages
-obj
+bin/
+packages/
+obj/
+*/bin/
+*/packages/
+*/obj/
+[Bb]in/
+[Oo]bj/
 *.suo
 *.user
