@@ -21,4 +21,5 @@ obj/
 /DatabaseScriptExecutorTests/bin
 /DatabaseScriptExecutorTests/obj
 /DatabaseScriptExecutor/bin
+
 .vs/
