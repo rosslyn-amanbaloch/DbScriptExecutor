@@ -16,7 +16,9 @@ obj/
 [Oo]bj
 [Bb]in/
 [Oo]bj/
+
 *.suo
+
 *.user
 /DatabaseScriptExecutorTests/bin
 /DatabaseScriptExecutorTests/obj
