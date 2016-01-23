@@ -18,3 +18,6 @@ obj/
 [Oo]bj/
 *.suo
 *.user
+/DatabaseScriptExecutorTests/bin
+/DatabaseScriptExecutorTests/obj
+/DatabaseScriptExecutor/bin
