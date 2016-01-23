@@ -1,7 +1,5 @@
-bin/
-DatabaseScriptExecutor/obj/
-DatabaseScriptExecutorTests/bin/
-DatabaseScriptExecutorTests/obj/
-packages/
-obj/
+bin
+packages
+obj
 *.suo
+*.user
