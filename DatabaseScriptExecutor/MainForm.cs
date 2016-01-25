@@ -2,12 +2,16 @@
 using System.Windows.Forms;
 using System.Configuration;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DatabaseScriptExecutor
 {
     public partial class MainForm : Form
     {
         private readonly IFormService _formService;
+        private CancellationTokenSource _tokenSource;
 
         public MainForm()
         {
@@ -29,7 +33,7 @@ namespace DatabaseScriptExecutor
         {
             try
             {
-                if (chkDbNames.SelectedItems.Count == 0)
+                if (chkDbNames.CheckedItems.Count == 0)
                 {
                     MessageBox.Show("No db selected");
                 }
@@ -44,25 +48,32 @@ namespace DatabaseScriptExecutor
 
                 if (!dbs.Any()) return;
 
-                //TODO: add parallelization
-                //var taskList = new List<Task>();
-
                 var dbCount = 1;
-                dbs.ForEach(async dbName =>
+                _tokenSource = new CancellationTokenSource();
+                btnCancel.Enabled = true;
+
+                await Task.Run(() =>
                 {
                     try
                     {
-                        UpdateInfo($"({dbCount++}/{dbs.Count}) Executing script on {dbName} {DateTime.Now}");
-                        await _formService.ExecuteSqlAsync(connectionString, dbName, sql);
+                        dbs.AsParallel().AsOrdered().WithCancellation(_tokenSource.Token).ForAll(dbName =>
+                        {
+                            try
+                            {
+                                UpdateInfo($"({dbCount++}/{dbs.Count}) Executing script on {dbName} {DateTime.Now}");
+                                _formService.ExecuteSqlAsync(connectionString, dbName, sql).Wait();
+                            }
+                            catch (Exception ex)
+                            {
+                                UpdateInfo(ex.ToString());
+                            }
+                        });
                     }
-                    catch (Exception ex)
+                    catch (OperationCanceledException)
                     {
-                        UpdateInfo(ex.ToString());
+                        UpdateInfo($"Script execution cancelled {DateTime.Now}");
                     }
                 });
-
-                //await Task.WhenAll(taskList);
-
             }
             finally
             {
@@ -115,6 +126,13 @@ namespace DatabaseScriptExecutor
         private void btnClear_Click(object sender, EventArgs e)
         {
             lblResult.Text = string.Empty;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            _tokenSource?.Cancel();
+            UpdateInfo($"Script cancellation requested {DateTime.Now}");
+            btnCancel.Enabled = false;
         }
     }
 }
